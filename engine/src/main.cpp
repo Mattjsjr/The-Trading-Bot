@@ -1,10 +1,16 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include "dotenv.h"
+#include <cpr/cpr.h>
+#include <nlohmann/json.hpp>
+#include "alpaca_client.cpp"
 
 int main() {
-    std::cout << "Trading bot engine\n";
-    std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "Line two";
+
+    std::optional<std::string> key = getDotEnvVariable("ALPACA_API_KEY");
+    std::optional<std::string> secret = getDotEnvVariable("ALPACA_API_SECRET");
+
+
     return 0;
 }
