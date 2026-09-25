@@ -64,7 +64,6 @@ cmake --build build
 ./build/engine
 ```
 
-A run makes two API requests per ticker (200 in total), so it can take a while and uses up API quota.
 
 ## Disclaimer
 
