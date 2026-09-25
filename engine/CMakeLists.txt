@@ -11,6 +11,10 @@ add_executable(engine
 src/main.cpp
 src/dotenv.cpp
 src/alpaca_client.cpp
+src/dates.cpp
+src/stock_tickers.cpp
+src/average_price.cpp
+src/get_stock_data.cpp
 )
 target_include_directories(engine PRIVATE include) 
 target_link_libraries(engine PRIVATE cpr::cpr nlohmann_json::nlohmann_json)
