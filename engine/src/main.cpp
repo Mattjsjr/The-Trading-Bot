@@ -27,7 +27,7 @@ int main() {
         for (std::string ticker : stock_tickers ){
 
             auto stock20 = fetchStockData(fmp_secret, ticker, twentydays, today);
-            auto stock50 = fetchStockData(fmp_secret, ticker, twentydays, today);
+            auto stock50 = fetchStockData(fmp_secret, ticker, fiftydays, today);
             double average20 = averagePrice(stock20);
             double average50 = averagePrice(stock50);
             double bounce = average20 - average50;
