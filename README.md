@@ -1,6 +1,6 @@
 # The Trading Bot
 
-A small C++ command-line tool that runs a moving-average crossover check over the 100 largest stocks in the S&P 500 and tells you which one to buy.
+A C++ tool that runs a moving-average crossover check over the 100 largest stocks in the S&P 500 and tells you which one to buy.
 
 ## How it works
 
