@@ -2,7 +2,7 @@
 #include "vector"
 #include "nlohmann/json.hpp"
 
-int averagePrice(const std::vector<nlohmann::json>& stockData){
+double averagePrice(const std::vector<nlohmann::json>& stockData){
     double total = 0;
     int count = 0;
     for (const auto& item : stockData){
